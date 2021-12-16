@@ -14,7 +14,7 @@ namespace Data
         public string Name { get; set; }
 
         [DataType(DataType.Url)]
-        [MaxLength(80)]
+        [MaxLength(150)]
         [Required]
         public string Link { get; set; }
 

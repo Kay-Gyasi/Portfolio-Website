@@ -35,7 +35,8 @@ namespace PortfolioApi
                 options.AddPolicy(name: "AllowOrigin",
                 builder =>
                 {
-                    builder.WithOrigins("https://localhost:44351", "http://localhost:4200")
+                    builder.WithOrigins("https://kaygyasi.vercel.app", "http://localhost:4200", 
+                        "https://kaygyasi-kay-gyasi.vercel.app")
                                             .AllowAnyHeader()
                                             .AllowAnyMethod()
                                             .AllowCredentials();
