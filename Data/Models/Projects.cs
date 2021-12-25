@@ -22,5 +22,9 @@ namespace Data
         [DataType(DataType.Text)]
         public string Description { get; set; }
 
+        [MaxLength(200)]
+        [DataType(DataType.Text, ErrorMessage = "Input is invalid")]
+        public string ImgLink { get; set; }
+
     }
 }
